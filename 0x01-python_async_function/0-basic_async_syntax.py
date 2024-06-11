@@ -10,6 +10,10 @@ that waits for a random delay between 0 and max_delay
 
 
 async def wait_random(max_delay=10):
+    '''
+    wait_random Func: genrate random float num and wait for it.
+    then return the num;
+    '''
     rand = random.uniform(0, max_delay)
     await asyncio.sleep(rand)
     return rand
