@@ -9,7 +9,7 @@ that waits for a random delay between 0 and max_delay
 '''
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     '''
     wait_random Func: genrate random float num and wait for it.
     then return the num;
